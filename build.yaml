@@ -23,12 +23,10 @@ include:
   - board: nice_nano_v2
     shield: corne_dongle
 
-
 # Left
   - board: nice_nano_v2
     shield: corne_left nice_view_adapter nice_view
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-
 
 # Right
   - board: nice_nano_v2
