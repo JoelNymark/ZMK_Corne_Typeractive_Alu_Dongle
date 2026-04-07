@@ -36,16 +36,18 @@
         label = "SSD1306";
 
         width = <128>;
-        height = <32>; // or 64 depending on your display
+        height = <32>;
+
+        multiplex-ratio = <31>;
 
         segment-offset = <0>;
         page-offset = <0>;
 
         display-offset = <0>;
-        multiplex-ratio = <31>; // 63 if 128x64
+
+        segment-remap;
+        com-invdir;
 
         prechargep = <0x22>;
-        // com-invdir;
-        // segment-remap;
     };
 };
