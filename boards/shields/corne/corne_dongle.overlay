@@ -30,24 +30,24 @@
     status = "okay";
 
     ssd1306: ssd1306@3c {
-        compatible = "sinowealth,sh1106";
+        compatible = "solomon,ssd1306fb";
         status = "okay";
         reg = <0x3c>;
-        label = "SH1106";
+        label = "SSD1306";
 
         width = <128>;
         height = <32>;
 
         multiplex-ratio = <31>;
 
-        segment-offset = <2>;   // important for SH1106
-
+        segment-offset = <0>;
         page-offset = <0>;
+
         display-offset = <0>;
 
         segment-remap;
         com-invdir;
 
-        prechargep = <0x22>;   // 👈 REQUIRED (fixes your error)
+        prechargep = <0x22>;
     };
 };
