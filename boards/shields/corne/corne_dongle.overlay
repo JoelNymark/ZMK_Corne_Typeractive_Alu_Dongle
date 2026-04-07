@@ -24,3 +24,27 @@
         >;
     };
 };
+
+&i2c0 {
+    status = "okay";
+
+    ssd1306: ssd1306@3c {
+        compatible = "solomon,ssd1306fb";
+        status = "okay";
+        reg = <0x3c>;
+        label = "SSD1306";
+
+        width = <128>;
+        height = <32>; // or 64 depending on your display
+
+        segment-offset = <0>;
+        page-offset = <0>;
+
+        display-offset = <0>;
+        multiplex-ratio = <31>; // 63 if 128x64
+
+        prechargep = <0x22>;
+        com-invdir;
+        segment-remap;
+    };
+};
