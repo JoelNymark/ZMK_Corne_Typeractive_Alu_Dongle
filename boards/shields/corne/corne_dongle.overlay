@@ -35,8 +35,8 @@
         reg = <0x3c>;
         label = "SSD1306";
         width = <128>;
-        height = <16>;
-        multiplex-ratio = <15>;
+        height = <64>;
+        multiplex-ratio = <63>;
         segment-offset = <0>;
         page-offset = <0>;
         display-offset = <0>;
