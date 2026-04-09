@@ -4,8 +4,8 @@
     chosen {
         zmk,kscan = &mock_kscan;
         zmk,matrix-transform = &default_transform;
-        zephyr,display = &ssd1306;
-    };
+        zephyr,display = &oled;
+    };-
 
     mock_kscan: mock_kscan_0 {
         compatible = "zmk,kscan-mock";
